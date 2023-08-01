@@ -1,0 +1,256 @@
+/*body {
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+} */
+
+.box{
+  margin: 6% auto;
+  width:380px;
+  height: 250px;
+  position: relative;
+  background: linear-gradient(to right,aqua,pink);
+  border-radius: 5px;
+  padding: 5px;
+} 
+.box p{
+  text-align: center;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3em;
+}
+.input{
+  top: 1890px;
+  width: 280px;
+  transition: .5s;
+}
+h6{
+  font-size: 3rem;
+  color:black ;
+  text-align: center; 
+}
+.field{
+  width: 100%;
+  padding: 10px;
+  margin:5px 0; 
+  border-left: 0;
+  border-top:0 ;
+  border-right: 0;
+  border-bottom: 1px solid #999999;
+  outline:none;
+  background: transparent;
+  text-align: center;
+}  
+.para p{
+  text-align: 0.2em;
+  font-family: 'Times New Roman'; 
+  color: black;
+}
+.submit button{
+  text-align: center;
+  width: 300px;
+  padding-left:50px; 
+}
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right,#ff105f,#ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  position: absolute;
+}
+/* a{
+  color: #ff105f;
+
+  width: 200px;
+  padding-left: 100px;
+} */
+button{
+  padding-left: 50px;
+  color: darkblue;
+}
+/* .card{
+  width: 1050px;
+  margin: 6% auto;
+  height: 500px;
+  position: relative;
+  background: linear-gradient(to right,aqua,pink);
+  border-radius: px;
+} */
+.wapper{
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.wapper i{
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.24rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+.wapper i:first-child{
+  left: 1px;
+}
+.wapper i:last-child{
+  right: 1px;
+}
+.wapper .carousel{
+  /* background-color: lightblue; */
+  display: grid;
+  grid-auto-flow: column;  
+  grid-auto-columns: calc((50% /3 ) - 12px);
+  gap: 1px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior:smooth ;
+  
+}
+.wapper h1{
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+.carousel ::-webkit-scrollbar{
+  display: none;
+}
+.carousel :where(.card, img){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.carousel.dragging{
+  scroll-behavior: auto;
+}
+.carousel.dragging .card{
+  cursor: grab;
+  user-select:none;
+
+} 
+.carousel .card{
+  scroll-snap-align: start;
+  height: 242px;
+  list-style: none;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: url(/assets/images/bg.jpg); */
+
+  /* background-image: linear-gradient(to right, cyan, rgb(214, 46, 133),  cyan); */
+
+}
+
+.card .img{
+  width: 178px;
+  height: 148px;
+  /* background-color: aquamarine; */
+  background: linear-gradient(to right,#ff105f,#ffad06);
+}
+.card .img img{
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  /* border-radius: 3px; */
+  /* background-color: aqua; */
+  border: 2px solid #fff;
+
+}
+
+.card{
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box-1{
+  /*background: linear-gradient(to right,aqua,pink);*/
+  padding-top: 10%;
+  text-align: left;
+  padding: 40px;
+  width: 70%;
+  height: 250px;
+  border-radius: 30px;
+  
+  border-color: 5px  #ff105f;
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.box-1 h2{
+  color: black;
+  }
+.box-1 p{
+  color: #000;
+}
+.box-1 a{
+  
+  color: darkblue;
+  text-align: left;
+}
+
+.imges{
+  width: 300px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background: linear-gradient(to right,aqua,pink); */
+
+  padding-top:5% ;
+  padding-right: 10%;
+}
+.box-1  imges{
+  border-radius: 20px;
+}
+/* hgf */
+
+h1{
+  text-align: center;
+  font-family:'Times New Roman', Times, serif ;
+  color: black;
+}
+
+@media screen and (max-width:900px) {
+  .wapper .carousel{
+    grid-auto-columns: calc((100%/2 ) -9px);
+  }
+  
+}
+
+@media screen and (max-width:900px) {
+  .wapper .carousel{
+    grid-auto-columns:calc((100%/2 ) - 9px);
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .wapper .carousel{
+    grid-auto-columns: 100%;
+  }
+}

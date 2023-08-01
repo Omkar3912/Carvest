@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Carvest - Buy & Sell!</title>
+  <meta name="title" content="Carvest - Buy & Sell!">
+  <meta name="description" content="Buy & Sell your dream car">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/icon.png" type="png">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon font
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+<div class="preloader"> 
+  <img src="assets/images/loadingnew.gif" alt="loading">
+</div>
+
+<header class="header">
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.png" width="128" height="63" alt="carvest home">
+        <p class="logotext"> Buy & Sell Your Dream Car</p>
+      </a>
+
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list"> 
+
+          <li>
+            <a href="newcar.html" class="navbar-link">New cars</a>
+          </li>
+
+          <li>
+            <a href="buyindex.html" class="navbar-link">Buy Now</a>
+          </li>
+
+          <li>
+            <a href="sell.html" class="navbar-link">Sell Now</a>
+          </li>
+
+
+          <li>
+            <a href="aboutus.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#footer" class="navbar-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="loginmain.html" class="btnlogin btn-primary"><img src="assets/images/userlogin.png" alt="userlogin">
+              <span class="span">Login Now!</span>
+              <span class="material-symbols-rounded">arrow_upward</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle :dark">carvest</p>
+
+            <h1 class="h1 section-title">Buy & Sell Your dream cars..</h1>
+
+            <p class="section-text">
+              Welcome to Carvest - Your one-stop destination for buying and selling cars. Find your dream car or sell with ease today!
+            </p>
+
+            <a href="buyindex.html" class="sbuybtn">
+              <span class="span">Buy Now!</span>
+
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner" style="--width: 1228; --height: 789;">
+            <img src="./assets/images/headcar.png" width="1228" height="789" alt="blue motor vehicle"
+              class="move-anim">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        -- Buy
+        - #SERVICE
+      -->
+
+      <!--section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')"-->
+      <section class="section work" aria-labelledby="work-label" class="hero has-bg-image" aria-label="home" style="background-image: linear-gradient(to right, #ddd6f3, #faaca8)">
+        <div class="container">
+
+          <p class="section-subtitle :light" id="work-label">Buy your car</p>
+
+          <h2 class="h2 section-title">Buy your dream car at latest market price </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+              <a href="buyindex.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/buymuvhome.png" width="350" height="406" loading="lazy" alt="SUVs"
+                    class="move-anim2">
+                </figure>
+              </a>
+
+                <div class="card-content">
+                  <p class="card-subtitle">muvs</p>
+                  <h3 class="h3 card-title">Latest MUV Cars</h3>
+
+                  <a href="buyindex.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+              <a href="buyindex.html">
+                <figure class="card-banner img-holder" style="--width: 450; --height: 406;">
+                  <img src="./assets/images/buysuvhome.png" width="350" height="406" loading="lazy" alt="Convertible"
+                  class="move-anim2">
+                </figure>
+              </a>
+                <div class="card-content">
+                  <p class="card-subtitle">SUVs</p>
+
+                  <h3 class="h3 card-title">latest SUV Cars</h3>
+
+                  <a href="buyindex.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+                <a href="buyindex.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/buyhatchback.png" width="350" height="406" loading="lazy" alt="Sedans"
+                  class="move-anim2">
+                </figure>
+                </a>
+
+                <div class="card-content">
+                  <p class="card-subtitle">HATCHBACKs</p>
+
+                  <h3 class="h3 card-title">Latest Hatchbacks</h3>
+
+                  <a href="buyindex.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+          <a href="buyindex.html" class="btn">
+            <span class="span">Buy Now</span>
+
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        -- NEW CARS
+        - #SERVICE
+      -->
+
+      <!--section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')"-->
+      <section class="section work" aria-labelledby="work-label" class="hero has-bg-image" aria-label="home" >
+        <div class="container">
+
+          <p class="section-subtitle :light" id="work-label">NEW CARS</p>
+
+          <h2 class="h2 section-title">Buy New cars at latest market price </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+              <a href="newcar.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/newsuvhome.png" width="350" height="406" loading="lazy" alt="SUVs"
+                    class="move-anim2">
+                </figure>
+              </a>
+
+                <div class="card-content">
+                  <p class="card-subtitle">SUVs</p>
+                  <h3 class="h3 card-title">Latest SUV</h3>
+
+                  <a href="newcar.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+              <a href="newcar.html">
+                <figure class="card-banner img-holder" style="--width: 450; --height: 406;">
+                  <img src="./assets/images/muv_home.png" width="350" height="406" loading="lazy" alt="Convertible"
+                  class="move-anim2">
+                </figure>
+              </a>
+                <div class="card-content">
+                  <p class="card-subtitle">MUV</p>
+
+                  <h3 class="h3 card-title">latest MUV Cars</h3>
+
+                  <a href="newcar.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+                <a href="newcar.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/newsedanhome.png" width="350" height="406" loading="lazy" alt="Sedans"
+                  class="move-anim2">
+                </figure>
+                </a>
+
+                <div class="card-content">
+                  <p class="card-subtitle">SEDAN</p>
+
+                  <h3 class="h3 card-title">Latest Sedans</h3>
+
+                  <a href="newcar.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+          <a href="newcar.html" class="btn">
+            <span class="span">New Cars</span>
+
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+
+        </div>
+      </section>
+      
+
+<!-- 
+        - SELL
+        - #WORK
+-->
+
+      <section class="section work" aria-labelledby="work-label" class="hero has-bg-image" aria-label="home" style="background-image: linear-gradient(to right, #ddd6f3, #faaca8)">
+        <div class="container">
+
+          <p class="section-subtitle :light" id="work-label">Sell your car</p>
+
+          <h2 class="h2 section-title">Sell your car at best & latest market price </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+              <a href="sell.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/suvsell.png" width="350" height="406" loading="lazy" alt="SUVs"
+                    class="move-anim2">
+                </figure>
+              </a>
+                <div class="card-content">
+                  <p class="card-subtitle">SUVs</p>
+                  <h3 class="h3 card-title">Latest SUV</h3>
+
+                  <a href="sell.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+              <a href="sell.html">
+                <figure class="card-banner img-holder" style="--width: 450; --height: 406;">
+                  <img src="./assets/images/convertible_sell.png" width="350" height="406" loading="lazy" alt="Convertible"
+                  class="move-anim2">
+                </figure>
+              </a>
+                <div class="card-content">
+                  <p class="card-subtitle">Convertible</p>
+
+                  <h3 class="h3 card-title">latest Convertible Car</h3>
+
+                  <a href="sell.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+              <a href="sell.html">
+                <figure class="card-banner img-holder" style="--width: 650; --height: 406;">
+                  <img src="./assets/images/sedansell.png" width="350" height="406" loading="lazy" alt="Sedans"
+                  class="move-anim2">
+                </figure>
+              </a>
+                <div class="card-content">
+                  <p class="card-subtitle">SEDAN</p>
+
+                  <h3 class="h3 card-title">Latest Sedans</h3>
+
+                  <a href="sell.html" class="card-btn">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+          <a href="sell.html" class="btn">
+            <span class="span">Sell Now!</span>
+
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" width="128" height="63" alt="carvest home">
+            <p class="footer-logotext"> Buy & Sell Your Dream Car</p>
+          </a>
+
+          <p class="footer-text">
+            We are car buy & sell website that makes it easy to buy and sell cars online. We offer a wide variety of cars for sale, 
+            from used to new, and we have a team of experts who can help you find the perfect car for your needs. 
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Customer Support</p>
+          </li>
+
+          <li>
+            <p class="p">Monday – Saturday</p>
+
+            <span class="span">9.00 am – 6.00 pm IST</span>
+          </li>
+
+          <li>
+            <a href="mailto:Support@carvest.com" class="footer-link">
+              <span><img src="assets/images/mail.png" alt="mail"></span>
+
+              <span class="span">Support@carvest.com</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Contact Info</p>
+          </li>
+
+          <li>
+            <a href="tel:+91 0000000000" class="footer-link">
+              <span><img src="assets/images/phone.png" alt="phone"></span>
+
+              <span class="span">+91 0000000000</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:info@carvest.com" class="footer-link">
+              <span><img src="assets/images/mail.png" alt="mail"></span>
+
+              <span class="span">info@carvest.com</span>
+            </a>
+          </li>
+
+          <li>
+
+              <a href="https://www.ltce.in/" target="_blank" class="footer-link">
+              <span><img src="assets/images/location.png" alt="loaction"></span>
+
+              <span class="span">Lokmanya Tilak College of Engineering, Kopar Khairane, Navi Mumbai, Maharashtra, 
+                India - 400709</span>
+              </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
+        class="shape shape-3 move-anim">
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">© 2023 Copyright ®All Rights Reserved</p>
+
+        <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
+          class="shape shape-2">
+
+        <img src="./assets/images/footer-shape-1.png" width="805" height="652" loading="lazy" alt="Red Car"
+          class="shape shape-1 move-anim">
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

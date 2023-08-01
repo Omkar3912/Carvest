@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.ncontainer{
+    position: relative;
+}
+.ncontainer .wrapper{
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+.ncontainer .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 25s ease-in infinite ;
+}
+.ncontainer #slider-img-1{
+    background-image: url('../images/hatchback_.png');
+    background-position: center;
+    
+}
+.ncontainer #slider-img-2{
+    background-image: url('../images/slidersuv.png');
+    background-position: center;
+    
+}
+.ncontainer #slider-img-3{
+    background-image: url('../images/front-left-side-47__.png');
+    background-position: center;
+}
+.ncontainer #slider-img-4{
+    background-image: url('../images/slidermuv.png');
+    background-position: center;
+}
+.ncontainer .button-holder .button{
+    background-color: rgb(231, 14, 14);
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.ncontainer .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+
+.textslider{
+    font-size: 80px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(255, 255, 255);
+  outline: none;
+  /*text-align: center;*/
+  cursor: pointer;
+    
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.textslider:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 20px;
+    color: rgb(255, 102, 0);
+  }
+
+
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media (max-width: 1000px){
+
+.ncontainer {
+    display: none;
+}
+}
+
+@media (min-width: 1540px){
+
+    .ncontainer {
+        display: none;
+    }
+    }
